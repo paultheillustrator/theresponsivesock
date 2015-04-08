@@ -1,0 +1,30 @@
+// Sock
+
+#sock_wrap{
+	width: 100%;
+}
+#sock_wrap img{
+	float: left;
+}
+#sock_left{
+	position: absolute;
+	left:0;
+	top:45%;
+	z-index: 1;
+}
+
+#sock_left img{
+	height:280px;
+	width: auto;
+}
+
+#sock_right {
+	position: absolute;
+	right:0;
+	top:50%;
+}
+
+#sock_right img{
+	height:180px;
+	width: auto
+}
