@@ -9,7 +9,7 @@
 #sock_left{
 	position: absolute;
 	left:0;
-	top:45%;
+	top:15%;
 	z-index: 1;
 }
 
@@ -21,10 +21,35 @@
 #sock_right {
 	position: absolute;
 	right:0;
-	top:50%;
+	top:30%;
 }
 
 #sock_right img{
-	height:180px;
+	height:100px;
 	width: auto
+}
+
+@media screen and (max-width: 600px){
+	#sock_left{
+	position: absolute;
+	left:0;
+	top:17%;
+	z-index: 1;
+	}
+
+	#sock_left img{
+	height:170px;
+	width: auto;
+	}
+
+	#sock_right {
+		position: absolute;
+		right:0;
+		top:20%;
+	}
+
+	#sock_right img{
+		height:90px;
+		width: auto
+	}
 }

@@ -26,6 +26,7 @@
 @import "vendor/jquery.ui.core";*/
 
 html, body{
+	font-family: $base-font-family;
 	line-height: $base-line-height;
 	letter-spacing: $base-letter-spacing;
 	color: $base-font-color;
@@ -40,7 +41,6 @@ body{
 
 @media screen and (min-width: 769px){
 html, body{
-	font-family: $base-font-family;
 	margin: 0;
 }
 }
@@ -132,6 +132,7 @@ h1, h2, h3 {
 	display: table-cell;
 	vertical-align: middle;
 	position: relative;
+	padding-top: 10em;
 }
 
 /*------------------FEATURE PANEL--------------*/

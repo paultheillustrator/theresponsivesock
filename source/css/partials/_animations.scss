@@ -3,9 +3,9 @@
 /*-----FadeIn------*/
 
 .growIn{
-animation:growIn 2s;
+animation:growIn 5s;
 animation-timing-function: ease-in-out;
--webkit-animation:growIn 2s; /* Safari and Chrome */
+-webkit-animation:growIn 5s; /* Safari and Chrome */
 -webkit-animation-timing-function: ease-in-out;
 }
 
@@ -18,9 +18,9 @@ animation-timing-function: ease-in-out;
 @-webkit-keyframes growIn /* Safari and Chrome */
 {
 0% {margin-right: 50em;}
-50% {margin-right: 25em;}
+/*50% {margin-right: 25em;}
 25% {margin-right: 50em;}
-99% {margin-right: -0.5em;}
+/*99% {margin-right: -0.5em;}*/
 100% {margin-right: 0;}
 }
 
@@ -32,8 +32,10 @@ animation-timing-function: ease-in-out;
 -webkit-animation:fadeIn 0.7s; /* Safari and Chrome */
 -webkit-animation-timing-function: ease-out;
 opacity: 0;
-animation-delay:2s;
--webkit-animation-delay:2s;
+animation-delay:5s;
+-webkit-animation-delay:5s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn
@@ -47,6 +49,32 @@ animation-delay:2s;
 0% {opacity: 0;}
 100% {opacity: 1;}
 }
+
+.fadeIn-3{
+animation:fadeIn-3 0.7s;
+animation-timing-function: ease-in-out;
+-webkit-animation:fadeIn-3 0.7s; /* Safari and Chrome */
+-webkit-animation-timing-function: ease-out;
+opacity: 0;
+animation-delay:5.1s;
+-webkit-animation-delay:5.1s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn-3
+{
+0% {opacity: 0; /*margin-top: (40px);*/}
+100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn-3 /* Safari and Chrome */
+{
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+/* FadeIn with delays */
 
 /* FadeIn with delays */
 
@@ -132,23 +160,24 @@ animation-timing-function: ease-in-out;
 /*-----Pulse------*/
 
 .pulse{
-animation:pulse 2s infinite;
-animation-timing-function: ease-in-out;
--webkit-animation:pulse 1.3s infinite; /* Safari and Chrome */
+animation:pulse 1s infinite;
+-webkit-animation:pulse 1s infinite; /* Safari and Chrome */
+animation-iteration-count:infinite;
+-webkitanimation-iteration-count:infinite;
 }
 
 @keyframes pulse
 {
-0% {height: auto; width:60%;}
-50% {height: auto; width:85%;}
-100% {height: auto; width:60%;}
+0% {opacity:0;}
+50% {opacity:1;}
+100% {opacity:0;}
 }
 
 @-webkit-keyframes pulse /* Safari and Chrome */
 {
-0% {height: auto; width:60%;}
-50% {height: auto; width:85%;}
-100% {height: auto; width:60%;}
+0% {opacity:0;}
+50% {opacity:1;}
+100% {opacity:0;}
 }
 
 /*-----PopIn------*/

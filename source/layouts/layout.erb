@@ -8,7 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <!-- Use title if it's in the page YAML frontmatter -->
         <title><%= current_page.data.title || "The Responsive Sock — How big is your browser?" %></title>
-        <meta name="description" content="">
+        <meta name="description" content="How big is your browser viewport? Find out how with this wonderfully tasteful tool from Paul the Designer.">
+        <meta name="keywords" content="paul the designer, viewport, browser size, width, html, web design, ron jeremy">
         <meta name="viewport" content="width=device-width">
 
         <!-- CSS -->
@@ -58,8 +59,13 @@
                 function round(value, decimals) {
                     return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
                 }
-                /* Print the result in HTML */
+                /* Print the pixel result in HTML */
                 document.getElementById("dimensions").innerHTML = round(getInches, 2), myHeight;
+
+                 /* Print the inches result in HTML */
+                document.getElementById("dimensions-width").innerHTML = myWidth;
+                document.getElementById("dimensions-height").innerHTML = myHeight;
+                document.getElementById("dimensions-dpi").innerHTML = dpi_x;
 
                 if (getInches < 10){
                      document.getElementById("namePorn").innerHTML = "Shortie";

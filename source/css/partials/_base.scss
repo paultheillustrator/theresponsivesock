@@ -6,10 +6,10 @@ $grey-lightest: #f1f1f1;
 $grey-light: #cccccc;
 $grey-medium: #666666;
 $grey-dark: #333333;
-$grey-darkest: #0a0a0a;
+$grey-darkest: #342c28;
 $black: #000;
 
-$red: #ff2a00;
+$red: #00fff6;
 $red-dark: #b41e00;
 $blue: #00c0ff;
 $yellow: #ffea00;
@@ -24,7 +24,7 @@ $black: 900;
 $base-font-family-sans: "brandon-grotesque",sans-serif;
 /*$base-font-family: "ff-tisa-web-pro", "serif";*/
 $base-font-family: "ff-meta-serif-web-pro", "serif";
-$base-font-family-hand: "scrawlregular", sans-serif;
+$base-font-family-hand: "ff-meta-serif-web-pro", "serif";
 $base-font-weight: $regular;
 $base-font-size: 18px;
 $base-font-size-micro: 0.75em;
@@ -40,7 +40,7 @@ $fixed-line-height: $base-line-height;
 // Headings
 $header-font-family-hand: "brandon-grotesque",sans-serif;
 $header-font-weight: $black;
-$header-font-family-serif: "garamond-premier-pro",sans-serif;
+$header-font-family-serif: "ff-meta-serif-web-pro", "serif";
 $header-font-family: "brandon-grotesque",sans-serif;
 
 //Padding

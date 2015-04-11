@@ -90,17 +90,23 @@ h4{
 }
 
 #giant{
-	font-size: 7em;
+	font-size: 4em;
 	font-family: $header-font-family;
 	font-weight: $black;
-	letter-spacing: 0.03em;
-	color: white;
+	letter-spacing: 0.1em;
+	color: $grey-darkest;
 	text-transform: uppercase;
 	/*position: fixed;
 	 top: 50%;
 	/*margin-top:0;*/
 	/*line-height: 0.8em;
 	margin-bottom: 0.3em;*/
+}
+
+.eyebrow{
+	color: #35c7c2;
+	margin-bottom: -1em;
+	letter-spacing: 0.3em;
 }
 
 .site-logo{
@@ -207,11 +213,13 @@ html, body{
 .subline{
 	position:relative;
 	top: -24px!important;
+	color: white!important;
 }
 
 .subline--homepage{
 	position:relative;
 	top: -24px!important;
+	color: rgba(0,0,0,0.7);
 }
 
 .hero span{
