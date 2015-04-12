@@ -53,3 +53,43 @@
 		width: auto
 	}
 }
+
+
+@media screen and (min-width: 1250px){
+	#sock_right {
+		position: absolute;
+		right:0;
+		top:20%;
+	}
+
+	#sock_right img{
+		height:180px;
+		width: auto
+	}
+}
+
+@media screen and (min-width: 2000px){
+	#sock_right {
+		position: absolute;
+		right:0;
+		top:30%;
+	}
+
+	#sock_right img{
+		height:200px;
+		width: auto
+	}
+}
+
+@media screen and (max-width: 480px){
+	#sock_right {
+		position: absolute;
+		right:0;
+		top:35%;
+	}
+
+	#sock_right img{
+		height:60px;
+		width: auto
+	}
+}

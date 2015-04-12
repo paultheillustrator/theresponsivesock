@@ -6,7 +6,7 @@ html, body{
 }
 
 
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 600px) and (max-width: 768px){
 html, body{
 	font-size: 112%;
 }
@@ -21,7 +21,7 @@ html, body{
 }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
 html, body{
 	font-size: $base-font-size;
 }
@@ -106,7 +106,13 @@ h4{
 .eyebrow{
 	color: #35c7c2;
 	margin-bottom: -1em;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 600px){
+	.eyebrow{
+	margin-bottom: -1.5em;
+}
 }
 
 .site-logo{
@@ -123,7 +129,7 @@ h4{
 	display: inline-block;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
 html, body{
 }
 #giant{
@@ -224,6 +230,13 @@ html, body{
 
 .hero span{
 	max-width: 2em!important;
+}
+
+@media screen and (max-width: 600px){
+
+.subline--homepage{
+	top: -1.5em!important;
+}
 }
 
 

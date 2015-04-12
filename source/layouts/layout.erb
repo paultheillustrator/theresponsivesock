@@ -26,6 +26,12 @@
         <script src="//use.typekit.net/nte5xvs.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
 
+        <!-- Apple touch icons -->
+        <link rel="apple-touch-icon" href="apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -60,18 +66,24 @@
                     return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
                 }
                 /* Print the pixel result in HTML */
-                document.getElementById("dimensions").innerHTML = round(getInches, 2), myHeight;
 
                  /* Print the inches result in HTML */
                 document.getElementById("dimensions-width").innerHTML = myWidth;
                 document.getElementById("dimensions-height").innerHTML = myHeight;
                 document.getElementById("dimensions-dpi").innerHTML = dpi_x;
+                /*document.getElementById("dimensions").innerHTML = round(getInches, 2), myHeight;*/
 
-                if (getInches < 10){
-                     document.getElementById("namePorn").innerHTML = "Shortie";
+                if (myWidth > 2000){
+                     document.getElementById("namePorn").innerHTML = "wow, you’re a big boy.";
+                }
+                else if (myWidth > 1600){
+                     document.getElementById("namePorn").innerHTML = "pretty average size.";
+                }
+                else if (myWidth > 1000){
+                     document.getElementById("namePorn").innerHTML = "not exactly Ron Jermey.";
                 }
                 else{
-                     document.getElementById("namePorn").innerHTML = "Ron Jeremy";
+                     document.getElementById("namePorn").innerHTML = "I guess size isn’t everything.";
                 }
 
             };
@@ -79,7 +91,7 @@
 
         <!-- Fit Text JS -->
         <script type="text/javascript">
-            $("#giant").fitText(1.1, { minFontSize: '50px', maxFontSize: '120px' });
+            $("#giant").fitText(1.1, { minFontSize: '65px', maxFontSize: '220px' });
         </script><!-- End Fit Text -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
