@@ -11,13 +11,13 @@ animation-timing-function: ease-in-out;
 
 @keyframes growIn
 {
-0% {margin-left: 50em;}
+0% {margin-left: 60em;}
 100% {margin-right: 0;}
 }
 
 @-webkit-keyframes growIn /* Safari and Chrome */
 {
-0% {margin-right: 50em;}
+0% {margin-right: 60em;}
 /*50% {margin-right: 25em;}
 25% {margin-right: 50em;}
 /*99% {margin-right: -0.5em;}*/
@@ -163,6 +163,17 @@ animation-timing-function: ease-in-out;
 animation:pulse 1s 5;
 -webkit-animation:pulse 1s 5; /* Safari and Chrome */
 opacity: 0;
+font-size: 3em;
+}
+
+@media screen and (max-width: 700px){
+.pulse{
+animation:pulse 1s 5;
+-webkit-animation:pulse 1s 5; /* Safari and Chrome */
+opacity: 0;
+font-size: 1.75em;
+}
+
 }
 
 @keyframes pulse
